@@ -32,15 +32,20 @@ section {
   margin-top: 1rem;
   border-radius: 2rem;
   background-color: var(--pink);
-  color: black ;
+  color: white;
   padding: 1rem 2.5rem;
   cursor: pointer;
   font-size: 1.7rem;
   text-align: center;
-  font-weight: 500;
+  font-weight: bold;
+  /* border: 2px solid var(--pink); */
 }
 
 .shopButton:hover {
+  /* box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175); */
+  background-color: transparent;
+  color: var(--pink);
+  border: 2px solid var(--pink);
 }
 
 header {
@@ -68,6 +73,12 @@ header .logo {
   font-family: "The Flowers", sans-serif;
 }
 
+header .logo-img {
+  width: 45px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
 header .navbar a {
   font-size: 1.5rem;
   padding: 0 1.5rem;
@@ -91,7 +102,7 @@ header .icons a:hover {
   display: flex;
   align-items: center;
   min-height: 100vh;
-  background: url(../img/lily.jpg) no-repeat;
+  background: url(../img/homePic.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -102,19 +113,19 @@ header .icons a:hover {
 
 .home .content h3 {
   font-size: 1.5rem;
-  color: beige;
+  color: black;
   margin-bottom: 1rem;
 }
 .home .content span {
   font-size: 4rem;
-  color: beige;
+  color: black;
   padding: 1rem 0;
   line-height: 1.5;
   font-family: "The Flowers", sans-serif;
 }
 .home .content p {
   font-size: 2rem;
-  color: beige;
+  color: black;
   padding: 1rem 0;
   line-height: 1.5;
 }
