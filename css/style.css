@@ -62,10 +62,6 @@ header {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
-/* header .logoImg {
-  width: 50px;
-} */
-
 header .logo {
   font-size: 3rem;
   color: #333;
@@ -98,6 +94,7 @@ header .icons a:hover {
   color: var(--pink);
 }
 
+/* Home Section */
 .home {
   display: flex;
   align-items: center;
@@ -128,4 +125,108 @@ header .icons a:hover {
   color: black;
   padding: 1rem 0;
   line-height: 1.5;
+}
+
+/* Prodcuts Section */
+/* Products container */
+.products .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.products .box {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 300px;
+  transition: 0.3s ease;
+}
+
+.products .box:hover {
+  transform: translateY(-10px);
+}
+
+/* Discount label */
+.products .discount {
+  background-color: #ff5252;
+  border-radius: 0 5px 5px 0;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 10px;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  text-transform: uppercase;
+}
+
+/* Product image styling */
+.products .image {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.products .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+.products .box:hover .image img {
+  transform: scale(1.1);
+}
+
+/* Icons (such as Add to Cart) */
+/* .products .icons {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.products .icons a {
+  background: #ff5252;
+  border-radius: 50%;
+  color: white;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.products .icons a:hover {
+  background: #ff7b7b;
+} */
+
+/* Content section */
+
+.products .content {
+  padding: 20px;
+}
+
+.products .content h3 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.products .price {
+  font-size: 18px;
+  color: #ff5252;
+  margin-top: 10px;
+}
+
+.products .price span {
+  color: #888;
+  font-size: 16px;
+  margin-left: 10px;
+  text-decoration: line-through;
 }
